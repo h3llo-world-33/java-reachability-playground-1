@@ -1,8 +1,5 @@
 name: Example workflow for Maven using Snyk
-on: 
-  pull_request:
-    branches:
-      - dev/**
+on: push
 jobs:
   security:
     runs-on: ubuntu-latest
@@ -20,4 +17,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          image: alpine/helm
+          image: teksphere/rms:latest
