@@ -16,4 +16,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          image: teksphere/rms:latest
+          image: teksphere/grpc:latest
