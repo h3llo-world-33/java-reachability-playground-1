@@ -1,5 +1,5 @@
 name: 'JAVA Case study end to end flow'
-on: 
+on: push
 
 jobs:
   lint-code:
